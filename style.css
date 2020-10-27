@@ -69,20 +69,6 @@ li.active blockquote {
 li.active span {
    width: 20%;
    padding: 0.5rem;
-   position: relative;
-   z-index: 9;
+   z-index: 3;
 }
 
-input[type="checkbox"] {
-   position: absolute;
-   cursor: pointer;
-   opacity: 0;
-   width: 100%;
-   height: 100%;
-   left: 0;
-   top: 0;
-}
-
-input[type="checkbox"]:checked ~ blockquote {
-   opacity: 0.4 !important;
-}

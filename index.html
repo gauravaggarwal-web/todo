@@ -15,15 +15,15 @@
       <section class="section">
          <div class="container content has-text-centered">
             <h1 clsss='has-text-info'>To Do</h1>
-            <div class="columns is-gapless">
-               <div class="column is-9">
+            <form onsubmit="addToList(event)" class="columns is-gapless">
+               <div class="column is-9 has-text-left">
                   <input type="text" onkeyup="checkErrors()" placeholder="list item" id="todo" class="input is-radiusless">
                   <label for="" id="textlabel" class="has-text-danger is-italic has-text-left "></label>
                </div>
                <div class="column is-3">
-                  <button type="submit" onclick="addToList()" id="submit" class="button is-fullwidth is-primary is-radiusless">ADD +</button>
+                  <button type="submit" id="submit" class="button is-fullwidth is-primary is-radiusless">ADD +</button>
                </div>
-            </div>
+            </form>
          </div>
       </section>
 
