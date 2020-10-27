@@ -1,0 +1,12 @@
+{
+	"short_name": "gtodo",
+	"name": "g to do",
+	"lang": "en",
+	"start_url": "https://gauravtodo.netlify.app/",
+	"background_color": "#2b2b2b",
+	"theme_color": "#2b2b2b",
+	"dir": "ltr",
+	"display": "standalone",
+	"orientation": "portrait",
+	"prefer_related_applications": "false"
+}
