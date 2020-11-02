@@ -29,11 +29,13 @@ const checkErrors = () => {
 const addToList = (event) => {
 	event.preventDefault()
 	checkErrors()
-	shouldEnter ? arrayList.push(entry.value) : null
-	printList()
-	entry.value = ""
-	shouldEnter ? (entrylabel.innerHTML = "") : null
-	addToLS()
+	if (shouldEnter) {
+		arrayList.push(entry.value);
+		printList();
+		entrylabel.innerHTML = "";
+	 }
+	 entry.value = "";
+	 addToLS()
 }
 
 const printList = () => {
@@ -84,3 +86,25 @@ const getFromLS = () => {
 
 // localStorage.getItem("list") ? console.log(true) : console.log(false);
 getFromLS()
+
+
+
+let demoText = document.getElementById("demoText")
+
+const demoPrint = () => {
+	let demoText = (50 * 60)
+	console.log(demoText)
+}
+
+let carbox = document.getElementById('carbox')
+
+var car = {
+	name : "Tesla",
+	model : "X",
+	color : "Blue",
+}
+
+const carDetails = () => {
+	let dfd = `The car name is ` + car.name
+	console.log(dfd)
+}
